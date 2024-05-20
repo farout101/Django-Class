@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from articles.models import Article
 from django.template.loader import render_to_string
 
-def home_view(request):
+def home_view(request, *args, **kwargs):
     
     number = random.randint(1,4)
     
