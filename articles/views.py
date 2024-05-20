@@ -3,6 +3,8 @@ from .models import Article
 # Create your views here.
 def article_detail_view(request, id=None):
     
+    print("This is from article_detail_view")
+    
     article = None
     
     if id is not None:
@@ -16,7 +18,7 @@ def article_detail_view(request, id=None):
 
 def article_search_view(request):
 
-    print(request)
+    print("This is from article_search_view")
 
     query_dict = request.GET
     
