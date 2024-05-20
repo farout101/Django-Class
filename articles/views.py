@@ -13,3 +13,8 @@ def article_detail_view(request, id=None):
     }
     
     return render(request, "articles/detail.html", context=context)
+
+def article_search_view(request):
+
+
+    return render(request, "articles/search.html", context=context)
