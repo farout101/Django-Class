@@ -9,7 +9,10 @@ def home_view(request):
     
     article = Article.objects.get(id=number)
     
+    article_qs = Article.objects.all()
+    
     context = {
+        "article_qs" : article_qs,
         "title" : article.title,
         "id" : article.id,
         "content" : article.content,
