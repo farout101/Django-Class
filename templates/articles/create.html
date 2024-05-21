@@ -3,6 +3,9 @@
 {% block content %}
 
 {% if not created %}
+
+{{ form.as_p }}
+
     <div style='margin-top:30px;'>
         <form action="." method="POST">
             {% csrf_token %}
