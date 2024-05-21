@@ -21,11 +21,11 @@ from .views import home_view
 
 urlpatterns = [
     path('', home_view),
-    path('login/', login_view),
-    path('logout/', logout_view),
-    path('register/', register_view),
     path('articles/<int:id>/', views.article_detail_view),
     path('articles/create/', views.article_create_view), # The operation order is important
     path('articles/', views.article_search_view),
     path('admin/', admin.site.urls),
+    path('login/', login_view),
+    path('logout/', logout_view),
+    path('register/', register_view),
 ]
