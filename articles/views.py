@@ -47,7 +47,7 @@ def article_create_view(request):
     print("This is from article_create_view")
     
     form = ArticleForm()
-    print(dir(form))
+    # print(dir(form))
     
     context = {
         "form" : form
